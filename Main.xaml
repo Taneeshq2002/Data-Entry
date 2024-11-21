@@ -1,0 +1,318 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="694,2643" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="696,2436" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:Object" Name="Name" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="578,2413" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="students.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="544,2121" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Extensions" sap:VirtualizedContainerService.HintSize="530,2084" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="ddd2c6b4-5a1c-4dcc-b9b1-844409f2d786" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1844" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="482,1805" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Students&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="448,1590" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ddd2c6b4-5a1c-4dcc-b9b1-844409f2d786" Text="[CurrentRow.ByField(&quot;Name&quot;)]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpa-unlimited.com/youtube/uipath-studio-x-excel/" CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvElementArea="135, 413, 1097, 42" CvType="InputBox" DesignTimeRectangle="137, 415, 1092, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='form-control' aaname='Name' /&gt;" Guid="cf1f5750-2e78-472f-ad3b-8703cb003ca9" InformativeScreenshot="dff29017b98f36a3d9a6a99db2a3c128.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvTextArea="136, 388, 43, 14" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="137, 383, 42, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Name' check:innerText='Name' /&gt;" Guid="da2634cc-363e-430a-acf5-4b8c0e75589d" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Student nr'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ddd2c6b4-5a1c-4dcc-b9b1-844409f2d786" Text="[CurrentRow.ByField(&quot;Student nr&quot;)]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpa-unlimited.com/youtube/uipath-studio-x-excel/" CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvElementArea="134, 499, 1097, 42" CvType="InputBox" DesignTimeRectangle="137, 501, 1092, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='studentnr' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='studentnr' tag='INPUT' type='text' class='form-control' aaname='Student nr' /&gt;" Guid="fab0eec0-b085-41a7-acd0-3d87bec16e88" InformativeScreenshot="c8085e1a1f759a3114e3600c8214e8a7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvTextArea="135, 473, 76, 15" CvTextArgument="Student nr" CvType="Text" DesignTimeRectangle="137, 469, 73, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Student nr' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Student nr' tag='LABEL' type='' class='' check:innerText='Student nr' /&gt;" Guid="619ee217-7e98-4012-bf2a-2e7030cba0dd" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Birthdate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="ddd2c6b4-5a1c-4dcc-b9b1-844409f2d786" Text="[CurrentRow.ByField(&quot;Birthdate&quot;)]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpa-unlimited.com/youtube/uipath-studio-x-excel/" CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvElementArea="134, 585, 1097, 41" CvType="InputBox" DesignTimeRectangle="137, 587, 1092, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='birthdate' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='birthdate' tag='INPUT' type='text' class='form-control' aaname='Birthdate' /&gt;" Guid="a5ed9bc2-c7fa-41ea-aca1-a6cbe8fc7014" InformativeScreenshot="ca2d2b80bfd87069f024db9a3481dbae.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvTextArea="136, 559, 65, 15" CvTextArgument="Birthdate" CvType="Text" DesignTimeRectangle="137, 555, 64, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Birthdate' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Birthdate' tag='LABEL' type='' class='' check:innerText='Birthdate' /&gt;" Guid="cc0a5c13-8c71-46f7-8a8e-037ba1e3243f" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Course'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ddd2c6b4-5a1c-4dcc-b9b1-844409f2d786" Text="[CurrentRow.ByField(&quot;Course nr&quot;)]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpa-unlimited.com/youtube/uipath-studio-x-excel/" CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvElementArea="134, 671, 539, 42" CvType="InputBox" DesignTimeRectangle="137, 673, 534, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='course' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='course' tag='INPUT' type='text' class='form-control' aaname='Course' /&gt;" Guid="c99858b3-7f3c-4451-a2ed-334247c6c89c" InformativeScreenshot="9e2ee6d712e1f71e7d9c99656c55ca53.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="6514f090-4d7e-4279-a03f-90f60cc6dfef" CvTextArea="135, 646, 51, 14" CvTextArgument="Course" CvType="Text" DesignTimeRectangle="137, 641, 49, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Course' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Course' tag='LABEL' type='' class='' check:innerText='Course' /&gt;" Guid="7d9fb1f2-a4bb-4b9e-9d4b-8bbe9b951bfa" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add customer'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ddd2c6b4-5a1c-4dcc-b9b1-844409f2d786" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpa-unlimited.com/youtube/uipath-studio-x-excel/" CVScreenId="93314b96-0f05-4982-8ee7-441830a5154d" CvElementArea="694, 514, 127, 41" CvTextArea="705, 526, 103, 15" CvTextArgument="Add customer" CvType="Button" DesignTimeRectangle="695, 515, 125, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-success' aaname='Add customer' check:innerText='Add customer' /&gt;" Guid="df0b5039-8f89-4fdc-ac64-87f060850203" InformativeScreenshot="b2630b6934e6ee3d1eb1ab583b628646.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[CurrentRow.ByField(&quot;Status&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[string.Format(&quot;Done&quot;)]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d87dedc19ccb3ac58980bd2bef042d9a.jpg" Selector="&lt;html app='chrome.exe' title='Learn RPA on Youtube!' /&gt;" Title="Learn RPA on Youtube!" Url="https://www.rpa-unlimited.com/youtube/uipath-studio-x-excel/" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+  </ueab:SequenceX>
+</Activity>
